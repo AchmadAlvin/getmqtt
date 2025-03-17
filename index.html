@@ -47,7 +47,7 @@
             console.log('Terhubung ke broker MQTT!');
             setConnected(true);
             setConnectionStatus('Terhubung ke MQTT');
-            mqttClient.subscribe('attendance/data/#');
+            mqttClient.subscribe('topic/absen/ngetes');
           });
           
           mqttClient.on('message', (topic, message) => {
